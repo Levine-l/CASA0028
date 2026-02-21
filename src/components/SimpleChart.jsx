@@ -1,6 +1,7 @@
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
+//register Chart.js modules once before rendering any chart
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 export default function SimpleChart({
@@ -13,11 +14,13 @@ export default function SimpleChart({
 }) {
     if (!data) return null
 
+    //bar chart options for popup
     const options = {
         responsive: true,
         maintainAspectRatio: false,
         scales: {
             x: {
+                //x axis label
                 title: {
                     display: true,
                     text: xAxisTitle,
@@ -27,6 +30,7 @@ export default function SimpleChart({
                 grid: { color: 'rgba(148, 163, 184, 0.25)' },
             },
             y: {
+                //y axis label
                 title: {
                     display: true,
                     text: yAxisTitle,
@@ -48,6 +52,7 @@ export default function SimpleChart({
             },
             tooltip: {
                 callbacks: {
+                    //format tooltip as readable population count
                     label(context) {
                         const value = Number(context.raw || 0)
                         return `${value.toLocaleString()} residents`
@@ -58,6 +63,7 @@ export default function SimpleChart({
     }
 
     return (
+        //container controls rendered chart height inside popup
         <div style={{ height, width: '100%', marginTop: 6 }}>
             <Bar data={data} options={options} />
         </div>

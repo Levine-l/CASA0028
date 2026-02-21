@@ -1,6 +1,7 @@
 import { Popup } from 'react-map-gl/maplibre'
 import SimpleChart from './SimpleChart'
 
+//map MSOA to compact distance labels for chart x axis
 const distance_bins = [
   { label: '<2', field: 'Distance travelled to work: Less than 2km' },
   { label: '2-5', field: 'Distance travelled to work: 2km to less than 5km' },
@@ -12,6 +13,7 @@ const distance_bins = [
   { label: '60+', field: 'Distance travelled to work: 60km and over' },
 ]
 
+//build Chart.js data from clicked MSOA feature
 function buildMsoaDistanceChartData(feature) {
   const props = feature?.properties
   if (!props) return null
@@ -82,6 +84,7 @@ export default function MapPopups({
             <div style={{ fontSize: 12 }}>
               Average commute distance：{Number(selectedMsoa.properties?.avgKm || 0).toFixed(1)} km
             </div>
+            {/*add Chart.js bar chart for MSOA distance distribution */}
             <SimpleChart
               data={buildMsoaDistanceChartData(selectedMsoa)}
               title="Distance to Work Distribution"
