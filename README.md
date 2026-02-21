@@ -1,6 +1,6 @@
 # Website introduction
 
-This website is to present the London underground map and the distance of residents to work.
+This website is to present the London underground map and the distance of London residents to work.
 
 At the top left on the website, there are two button which the top one is to show or hide the choropleth map and the other one is to change the mode of choropleth map between average distance to work and the percentage of distance to work larger than 5km.
 
