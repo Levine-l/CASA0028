@@ -97,6 +97,7 @@ export default function MapControls({
             <div>• Tube lines & stations: https://github.com/oobrien/vis/tree/master/tubecreature/data</div>
             <div>• Census 2021 Distance travelled to work: https://www.nomisweb.co.uk/sources/census_2021_bulk</div>
             <div>• MSOA boundaries for join purpose: https://data.london.gov.uk/dataset/statistical-gis-boundary-files-for-london-20od9/</div>
+            <div>• Visualisation library: Chart.js</div>
           </div>
         )}
       </div>
