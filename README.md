@@ -6,7 +6,7 @@ At the top left on the website, there are two button which the top one is to sho
 
 At the bottom left, there is a legend for the choropleth map, while at the top right there is one for the tube lines. 
 
-On the map, if click on an MSOA or a tube station, the corresponding information will pop up. For example, when click the Euston Square station, it shows "Hammersmith & City", "Circle", "Metropolitan". Also click the MSOA where UCL is, shows Camden 026, Ratio that commute distance is 5km+：8.8%, Average commute distance：5.9 km.
+On the map, if click on an MSOA or a tube station, the corresponding information will pop up. For example, when click the Euston Square station, it shows "Hammersmith & City", "Circle", "Metropolitan". Also click the MSOA where UCL is, shows Camden 026, Ratio that commute distance is 5km+：8.8%, Average commute distance：5.9 km, and a bar chart of the distance to work distribution.
 
 All data that I used can be founded at the bottom right button "show sources".
 
