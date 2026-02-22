@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/CASA0028/',
   plugins: [
     react(
       { babel: { plugins: [['babel-plugin-react-compiler']]}, 
